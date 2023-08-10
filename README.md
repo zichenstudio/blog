@@ -47,7 +47,7 @@ You can use `relative` template like this:
 
 --------
 
-; New README.md Start
+<!-- New README.md Start -->
 
-#Efficiency_jekyll_theme
+# Efficiency_jekyll_theme
 
