@@ -51,3 +51,8 @@ You can use `relative` template like this:
 
 # Efficiency_jekyll_theme
 
+这是一个开源的Jekyll主题！
+
+基于[kotet/ultralight](https://github.com/kotet/ultralight)
+
+经过我们的测试，此主题比官方快18%！
