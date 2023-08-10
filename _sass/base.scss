@@ -1,12 +1,37 @@
-$base-font-size: 16px !default;
-$text-color: black;
-$border-color: lightgray;
+$default-base-font-size: 16px !default;
+$primary-text-color: #000000;
+$border-color: #D3D3D3;
+$thead-background-color: #EEEEEE;
+$thead-hover-background-color: #333333;
+$thead-hover-color: #FFFFFF;
+$tr-hover-background-color: #F5F5F5;
+$td-hover-background-color: #DDDDDD;
+$link-color: #39C5BB;
 
 body {
-    color: $text-color;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: $primary-text-color;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
     margin: 0;
-    word-break: break-word;
-    font-family: Helvetica,sans-serif;
+}
+
+.content-wrapper {
+    background-color: rgba(235, 248, 253, 0.85);
+    margin: 1% 2% 5% 2%;
+    padding: 1% 1.5% 3%;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 100%;
+
+    /* 设置内容区域内元素的最大宽度 */
+    * {
+        max-width: 100%;
+    }
 }
 
 ul {
@@ -22,7 +47,8 @@ article {
     padding: 0 20px 0 20px;
 }
 
-header,footer {
+header,
+footer {
     padding: 10px;
 }
 
@@ -31,12 +57,12 @@ header,footer {
 }
 
 .site-title {
-    color: $text-color;
-    font-weight: bold; 
+    color: $primary-text-color;
+    font-weight: bold;
 }
 
 .post-counter {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .post-info {
@@ -44,17 +70,39 @@ header,footer {
 }
 
 table {
-    th,td {
-        border-bottom: 1px solid $border-color;
-        border-right: 1px double $border-color;
-    }
+    border-collapse: collapse; /* 合并单元格边框 */
+    width: 100%;
 }
 
-.content-wrapper {
-    max-width: 800px;
-    margin-right: auto;
-    margin-left: auto;
-    * {
-        max-width: 100%;
-    }
+thead tr th {
+    background-color: $thead-background-color; /* 鼠标悬浮时改变表头列背景颜色 */
 }
+
+thead tr:hover th {
+    background-color: $thead-hover-background-color; /* 鼠标悬浮时改变表头列背景颜色 */
+    color: $thead-hover-color; /* 鼠标悬浮时改变表头列文字颜色 */
+}
+
+th,
+td {
+    padding: 8px; /* 单元格内边距 */
+}
+
+tr:hover {
+    background-color: $tr-hover-background-color; /* 鼠标悬浮时改变行颜色 */
+}
+
+td:hover {
+    background-color: $td-hover-background-color; /* 鼠标悬浮时改变单元格背景颜色 */
+}
+
+a {
+    color: $primary-text-color;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: $link-color;
+    text-decoration-line: underline;
+}
+
