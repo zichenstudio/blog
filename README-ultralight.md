@@ -44,4 +44,3 @@ You can use `relative` template like this:
 ```
 [link]({% include relative %}{% post_url your-article-filename %})
 ```
-
