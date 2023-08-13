@@ -7,7 +7,7 @@ layout: default
     {% for post in site.posts %}
     <li>
         <a href="{% include relative %}{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        <p class="post-info">
+        <p class="post-info" style="color:rgb(51,51,51);">
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
             {% for tag in post.tags %}
              | <a href="{% include relative %}/tags/#{{ tag | downcase }}">#{{ tag }}</a>

@@ -14,19 +14,30 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Your awesome title
-baseurl: "" # For github pages
+baseurl: "/" # For github pages
 description: >- # You can edit footer in _includes/footer.md 
-  This is an ultralight demo.
+  This is an Efficiency demo.Based on ultralight.
 
 google_analytics: # Enter your tracking ID. Not available on IPFS
 
 twitter_cards: off # Not available on IPFS. /assets/logo.png required
 twitter_username: 
 
+# 日期格式化
+date_format: "%Y/%m/%d-%a"
+
+# 背景图片URL
+background-url: ""
+
+# CC-BY-NC licenses
+ccbync: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。'
+
 # Build settings
 markdown: kramdown
 sass:
   style: compressed
+
+future: BOOL
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -39,3 +50,4 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
