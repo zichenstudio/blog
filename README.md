@@ -12,3 +12,25 @@
 
 我创建了[新的LICENSE](/LICENSE)。此处为[原LICENSE](/LICENSE-ultralight)。
 
+----
+
+下方内容更改自[原README.md](/README-ultralight.md)
+
+## 使用方法
+
+### GitHub Pages
+
+```console
+$ git clone https://github.com/ZiChenStudio/Efficiency_jekyll_theme.git && cd Efficiency_jekyll_theme
+$ git remote set-url origin https://github.com/yourname/yourname.github.io.git
+$ git push origin master
+```
+
+### IPFS
+
+```console
+$ git clone https://github.com/ZiChenStudio/Efficiency_jekyll_theme.git && cd Efficiency_jekyll_theme
+$ bundle && bundle exec jekyll build
+$ ipfs add -r _site/
+```
+
