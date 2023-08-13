@@ -16,7 +16,7 @@
 title: Your awesome title
 baseurl: "/" # For github pages
 description: >- # You can edit footer in _includes/footer.md 
-  This is an ultralight demo.
+  This is an Efficiency demo.Based on ultralight.
 
 google_analytics: # Enter your tracking ID. Not available on IPFS
 
@@ -37,6 +37,8 @@ markdown: kramdown
 sass:
   style: compressed
 
+future: BOOL
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -49,4 +51,3 @@ sass:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-future: BOOL
