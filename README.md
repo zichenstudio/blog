@@ -12,6 +12,12 @@
 
 我创建了[新的LICENSE](/LICENSE)。此处为[原LICENSE](/LICENSE-ultralight)。
 
+## 使用的东西
+
+- [jQuery](https://github.com/jquery/jquery/)
+- [highlight.js](https://github.com/highlightjs/highlight.js)
+- [welcomeTitle.js](https://github.com/ZiChenStudio/welcomeTitle.js)
+
 ----
 
 下方内容更改自[原README.md](/README-ultralight.md)
