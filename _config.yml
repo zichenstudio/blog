@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Your awesome title
-baseurl: "/" # For github pages
+baseurl: "" # For github pages
 description: >- # You can edit footer in _includes/footer.md 
   This is an Efficiency demo.Based on ultralight.
 
