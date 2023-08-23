@@ -107,6 +107,29 @@ a:hover {
     font-weight: bolder;
 }
 
+/* 引用左侧竖线 */
+blockquote {
+  position: relative;
+  padding-left: 10px;
+}
+
+blockquote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #000;
+}
+
+blockquote p {
+  display: inline-block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
 .up{
     float: right;
     position: fixed;
