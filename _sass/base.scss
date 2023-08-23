@@ -7,6 +7,7 @@ $thead-hover-color: #FFFFFF;
 $tr-hover-background-color: #F5F5F5;
 $td-hover-background-color: #DDDDDD;
 $link-color: #39C5BB;
+$blockquote-bg-color: #000000;
 
 body {
     background-attachment: fixed;
@@ -106,6 +107,29 @@ a:hover {
     text-decoration-line: underline;
     font-weight: bolder;
 }
+
+/* 引用左侧竖线 */
+blockquote {
+    position: relative;
+    padding-left: 10px;
+}
+
+blockquote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $blockquote-bg-color;
+}
+
+blockquote *:not(li) {
+    display: inline-block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
 
 .up{
     float: right;
