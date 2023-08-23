@@ -27,7 +27,7 @@
 ### GitHub Pages
 
 ```console
-$ git clone https://github.com/ZiChenStudio/Efficiency_jekyll_theme.git && cd Efficiency_jekyll_theme
+$ git clone https://github.com/ZiChenStudio/Efficiency_jekyll_theme.git --branch master && cd Efficiency_jekyll_theme
 $ git remote set-url origin https://github.com/yourname/yourname.github.io.git
 $ git push origin master
 ```
@@ -35,7 +35,7 @@ $ git push origin master
 ### IPFS
 
 ```console
-$ git clone https://github.com/ZiChenStudio/Efficiency_jekyll_theme.git && cd Efficiency_jekyll_theme
+$ git clone https://github.com/ZiChenStudio/Efficiency_jekyll_theme.git --branch master&& cd Efficiency_jekyll_theme
 $ bundle && bundle exec jekyll build
 $ ipfs add -r _site/
 ```
