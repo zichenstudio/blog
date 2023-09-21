@@ -17,6 +17,7 @@
 - [jQuery](https://github.com/jquery/jquery/)
 - [highlight.js](https://github.com/highlightjs/highlight.js)
 - [welcomeTitle.js](https://github.com/ZiChenStudio/welcomeTitle.js)
+- Background photo by [Yuming Zhang](https://unsplash.com/@auceinss?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/ck-p536ihvg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 ----
 
