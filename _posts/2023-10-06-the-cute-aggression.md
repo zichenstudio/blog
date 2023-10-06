@@ -19,10 +19,8 @@ tags: 健康
 
 当然，要用理智去克制自己的行为，否则可能产生无法挽回的后果！
 
--------
+----------------
 
 [^1]: 致死性萌物症候群（Fatal Moe-Things Syndrome，简称FMTS）。参考[https://mzh.moegirl.org.cn/%E8%90%8C%E6%AD%BB](https://mzh.moegirl.org.cn/%E8%90%8C%E6%AD%BB)
-
-----------------
 
 {{ site.ccbync }}
