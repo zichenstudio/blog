@@ -22,3 +22,7 @@ tags: 健康
 -------
 
 [^1]: 致死性萌物症候群（Fatal Moe-Things Syndrome，简称FMTS）。参考[https://mzh.moegirl.org.cn/%E8%90%8C%E6%AD%BB](https://mzh.moegirl.org.cn/%E8%90%8C%E6%AD%BB)
+
+----------------
+
+{{ site.ccbync }}
