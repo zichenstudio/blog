@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 可爱侵犯(The cute aggression)：当爱过于强烈
+title: 可爱侵犯(The cute aggression)
 tags: 健康
 ---
 
