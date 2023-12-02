@@ -5,8 +5,9 @@ $thead-background-color: #EEEEEE;
 $thead-hover-background-color: #333333;
 $thead-hover-color: #FFFFFF;
 $tr-hover-background-color: #F5F5F5;
+$input-background-color: #F5F5F5;
 $td-hover-background-color: #DDDDDD;
-$link-color: #39C5BB;
+$theme-color: #39C5BB;
 $blockquote-bg-color: #000000;
 
 body {
@@ -35,6 +36,18 @@ body {
     }
 }
 
+.search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: $input-background-color;
+}
+
+.search input:focus {
+    outline: none;
+    border-color: $theme-color;
+    box-shadow: 0 0 5px $theme-color;
+}
 ul {
     padding-left: 10px;
     margin: 10px;
@@ -103,7 +116,7 @@ a {
 }
 
 a:hover {
-    color: $link-color;
+    color: $theme-color;
     text-decoration-line: underline;
     font-weight: bolder;
 }
