@@ -29,25 +29,26 @@ body {
     border-radius: 20px;
     max-width: 800px;
     width: 100%;
-
     /* 设置内容区域内元素的最大宽度 */
     * {
         max-width: 100%;
     }
 }
 
-.search input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: $input-background-color;
+.search {
+    input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: $input-background-color;
+        &:focus {
+            outline: none;
+            border-color: $theme-color;
+            box-shadow: 0 0 5px $theme-color;
+        }
+    }
 }
 
-.search input:focus {
-    outline: none;
-    border-color: $theme-color;
-    box-shadow: 0 0 5px $theme-color;
-}
 ul {
     padding-left: 10px;
     margin: 10px;
@@ -88,61 +89,64 @@ table {
     width: 100%;
 }
 
-thead tr th {
-    background-color: $thead-background-color; /* 鼠标悬浮时改变表头列背景颜色 */
-}
-
-thead tr:hover th {
-    background-color: $thead-hover-background-color; /* 鼠标悬浮时改变表头列背景颜色 */
-    color: $thead-hover-color; /* 鼠标悬浮时改变表头列文字颜色 */
+thead {
+    tr {
+        th {
+            background-color: $thead-background-color;
+            /* 鼠标悬浮时改变表头列背景颜色 */
+        }
+        &:hover {
+            th {
+                background-color: $thead-hover-background-color;
+                /* 鼠标悬浮时改变表头列背景颜色 */
+                color: $thead-hover-color;
+                /* 鼠标悬浮时改变表头列文字颜色 */
+            }
+        }
+    }
 }
 
 th,
 td {
-    padding: 8px; /* 单元格内边距 */
+    padding: 8px;/* 单元格内边距 */
 }
 
 tr:hover {
-    background-color: $tr-hover-background-color; /* 鼠标悬浮时改变行颜色 */
-}
-
+    background-color: $tr-hover-background-color;
+} 
 td:hover {
-    background-color: $td-hover-background-color; /* 鼠标悬浮时改变单元格背景颜色 */
+    background-color: $td-hover-background-color;
 }
 
 a {
     color: $primary-text-color;
     text-decoration-line: none;
-}
-
-a:hover {
-    color: $theme-color;
-    text-decoration-line: underline;
-    font-weight: bolder;
+    &:hover {
+        color: $theme-color;
+        text-decoration-line: underline;
+        font-weight: bolder;
+    }
 }
 
 /* 引用左侧竖线 */
 blockquote {
+    background-color: rgba(57, 197, 187, 0.3);
     position: relative;
     padding-left: 10px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background-color: $theme-color;
+    }
+    ul,ol {
+        margin: 0px;
+        padding: 0px 0px 0px 20px;
+    }
 }
-
-blockquote::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background-color: $blockquote-bg-color;
-}
-
-blockquote *:not(li) {
-    display: inline-block;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
 
 .up{
     float: right;
@@ -151,4 +155,13 @@ blockquote *:not(li) {
     width: 100px;
     top: 65%;
     right:5px;
+}
+
+#content {
+    background-color: rgba(235, 248, 253, 0.1);
+    float: right;
+    position: fixed;
+    top: 20%;
+    left: 10px;
+    border-radius: 20px;
 }
