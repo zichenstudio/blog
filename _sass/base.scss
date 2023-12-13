@@ -165,3 +165,12 @@ blockquote {
     left: 10px;
     border-radius: 20px;
 }
+
+#time-pass {
+    background-color: rgba(197, 57, 67 ,0.4);
+    // RGB197,57,67(#C53943)与#39C5BB互补
+    border: solid $theme-color;
+    border-radius: 5px;
+    font-style: italic;
+}
+

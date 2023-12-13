@@ -12,6 +12,7 @@ layout: default
             {% for tag in page.tags %}
             | <a href="{% include relative %}/tags/#{{ tag | downcase }}">#{{ tag }}</a>
             {% endfor %}
+            <div id="time-pass"></div>
         </p>
     </div>
     {{ content }}
@@ -19,3 +20,4 @@ layout: default
 <div id="content"></div>
 <script src="{% include relative %}/script/smoothScroll.js"></script>
 <script src="{% include relative %}/script/contents.js" async></script>
+<script src="{% include relative %}/script/timePass.js" async></script>
