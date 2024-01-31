@@ -21,12 +21,12 @@ layout: default
     {% endfor %}
 </ul>
 <script>
-    function onInputValue(value) {
-        const articleTitles = document.getElementsByClassName("articleTitle");
-        Array.from(articleTitles).forEach(articleTitle => {
-            const articleParentNode = articleTitle.parentNode;
-            articleParentNode.style.display = articleTitle.innerText.includes(value) ? 'list-item' : 'none';
-        });
-    }
+  function onInputValue(value) {
+    const articleTitles = document.getElementsByClassName("articleTitle");
+    Array.from(articleTitles).forEach(articleTitle => {
+      const articleParentNode = articleTitle.parentNode;
+      articleParentNode.style.display = articleTitle.innerText.includes(value) ? 'list-item' : 'none';
+    });
+  }
 </script>
 </div>
