@@ -17,7 +17,6 @@
         xhr.send();
     </script>
     {% include head/style.html %}
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     {% if page.mathjax %}{% include head/mathjax.html %}{% endif %}
