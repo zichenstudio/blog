@@ -33,11 +33,14 @@ icon: "https://zichenstudio.github.io/blog/favicon.ico"
 background-url: "https://s2.loli.net/2023/11/18/Loy27Fhfgu5iBAV.jpg"
 background-source: "Background photo by <a href='https://unsplash.com/@auceinss?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Yuming Zhang</a> on <a href='https://unsplash.com/photos/ck-p536ihvg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"
 
-# CC-BY-NC licenses
-ccbync: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。'
+# CC-BY license
+ccby: ' This work is licensed under CC BY 4.0. To view a copy of this license, visit <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">http://creativecommons.org/licenses/by/4.0/</a>'
 
-# CC-BY-NC-SA licenses
-ccbyncsa: '<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。'
+# CC-BY-NC license
+ccbync: 'This work is licensed under CC BY-NC 4.0. To view a copy of this license, visit <a href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</a>'
+
+# CC-BY-NC-SA license
+ccbyncsa: 'This work is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">http://creativecommons.org/licenses/by-nc-sa/4.0/</a>'
 
 # Build settings
 markdown: kramdown
