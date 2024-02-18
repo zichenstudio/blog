@@ -2,31 +2,31 @@
 layout: default
 ---
 <div class="home">
-<h3><span class="post-counter" >{{ site.posts | size }} Posts</span></h3>
-<hr>
-<div class="search">
+  <h3><span class="post-counter" >{{ site.posts | size }} Posts</span></h3>
+  <hr>
+  <div class="search">
     Search: <input type="text" oninput="onInputValue(value)">
-</div>
-<ul>
+  </div>
+  <ul>
     {% for post in site.posts %}
     <li>
-        <a href="{% include relative %}{{ post.url | relative_url }}" class="articleTitle">{{ post.title | escape }}</a>
-        <p class="post-info" style="color:rgb(51,51,51);">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-            {% for tag in post.tags %}
-             | <a href="{% include relative %}/tags/#{{ tag | downcase }}">#{{ tag }}</a>
-            {% endfor %}
-        </p>
+      <a href="{% include relative %}{{ post.url | relative_url }}" class="articleTitle">{{ post.title | escape }}</a>
+      <p class="post-info" style="color:rgb(51,51,51);">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      {% for tag in post.tags %}
+      | <a href="{% include relative %}/tags/#{{ tag | downcase }}">#{{ tag }}</a>
+      {% endfor %}
+      </p>
     </li>
     {% endfor %}
-</ul>
-<script>
-  function onInputValue(value) {
-    const articleTitles = document.getElementsByClassName("articleTitle");
-    Array.from(articleTitles).forEach(articleTitle => {
-      const articleParentNode = articleTitle.parentNode;
-      articleParentNode.style.display = articleTitle.innerText.includes(value) ? 'list-item' : 'none';
-    });
-  }
-</script>
+  </ul>
+  <script>
+    function onInputValue(value) {
+      const articleTitles = document.getElementsByClassName("articleTitle");
+      Array.from(articleTitles).forEach(articleTitle => {
+        const articleParentNode = articleTitle.parentNode;
+        articleParentNode.style.display = articleTitle.innerText.includes(value) ? 'list-item' : 'none';
+      });
+    }
+  </script>
 </div>

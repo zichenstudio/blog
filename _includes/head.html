@@ -1,23 +1,23 @@
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{{ site.icon }}">
-    <script>
-        let xhr = new XMLHttpRequest();
-        let bgUrl = "{{ site.background-url }}";
-        xhr.open('GET', bgUrl, true);
-        xhr.responseType = 'blob';
-        xhr.onload = function() {
-            if (xhr.status === 200) {
-                document.body.style.backgroundImage = "url({{ site.background-url }})";
-            } else {
-                console.error("background Error!");
-            }
-        };
-        xhr.send();
-    </script>
-    {% include head/style.html %}
-    <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    {% if page.mathjax %}{% include head/mathjax.html %}{% endif %}
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ site.icon }}">
+  <script>
+    let xhr = new XMLHttpRequest();
+    let bgUrl = "{{ site.background-url }}";
+    xhr.open('GET', bgUrl, true);
+    xhr.responseType = 'blob';
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        document.body.style.backgroundImage = "url({{ site.background-url }})";
+      } else {
+        console.error("background Error!");
+      }
+    };
+    xhr.send();
+  </script>
+  {% include head/style.html %}
+  <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  {% if page.mathjax %}{% include head/mathjax.html %}{% endif %}
 </head>

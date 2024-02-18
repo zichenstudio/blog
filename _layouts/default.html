@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
-<body>
+  {% include head.html %}
+  <body>
     <div class="content-wrapper">
-        <header>
-            <a class="site-title" href="{% include relative %}" style="font-size: 125%;">{{ site.title }}</a>
-            <div style="display: inline-block">
-                {% for my_page in site.pages %}{% if my_page.title and my_page.noindex != true %}
-                | <a href="{% include relative %}{{ my_page.url | relative_url }}">{{ my_page.title }}</a>
-                {% endif %}{% endfor %}
-            </div>
-        </header>
-        <hr>
-        <main>
+      <header>
+        <a class="site-title" href="{% include relative %}" style="font-size: 125%;">{{ site.title }}</a>
+        <div style="display: inline-block">
+          {% for my_page in site.pages %}{% if my_page.title and my_page.noindex != true %}
+          | <a href="{% include relative %}{{ my_page.url | relative_url }}">{{ my_page.title }}</a>
+          {% endif %}{% endfor %}
+        </div>
+      </header>
+      <hr>
+      <main>
         {{ content }}
-        </main>
-        <hr>
-        <!-- 回到顶部箭头 -->
-        <div class="up"><a href="javascript:scrollTo(0,0)"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAh1BMVEUAAAAAAAAHBwcPDw8KCgocHBwHBwcWFhYvLy8CAgIICAgAAAAAAAApKSkaGhoICAgSEhIgICAdHR0QEBAsLCwICAgdHR0hISEDAwMhISEQEBAMDAwaGhoPDw8AAAAAAAANDQ0SEhIfHx8bGxsYGBgiIiIJCQknJycEBAQVFRUlJSUuLi4rKyuHOr48AAAAIHRSTlMaACdv8alE8dTUqRgO8dTUmm9ERPHi1JqMYWFTNjYXDX2H0SQAAAFmSURBVGje7drXboMwFIBh12YkjDCyd1eatPT9n6+Aig/EFpaMTYfOfwW2xQcSSEhAHkYIEUR4iPwe5Hwixjqd5UhEjBZJkdAsEkoRYjhEEEEEEUQQQQSRn0DoZEJtIWAUBSh2kENplMrBJpIvirpFbg/J48/v4twWso2vvHhrB8munTIbSPZxV2YeWV+E1qYR9yLJNYu4zzy3vW0QoavWcTviippC6OyF59bXBfszagY5do175WgCmfuvvLQZTGHMn+sicoPBMBMVfWTnv/MqAxQY93fDEPYEMfWUGlEZikldJH3kOXsitHdgPtVFgpbhEUleSwk0ENFQKlpI8tYEhqjwRYkWQpsDLMEQlWVzIlQLIZ5zq0oo6Ykm9SLH07272K1sCoZcmVarmP5zsuGGQtkMeeIDMPqUgAxBaK8Bq/7iWz0iiCCCCCKIIILIOIj9z7Ljf2AGJTR4HdG//7OgCRFEEOn2BScwTK+TREnMAAAAAElFTkSuQmCC"></a></div>
-        <footer>
-            <p style="text-align: center;">
-                {% capture footer-md %}{% include footer.md %}{% endcapture %}{{ footer-md | markdownify }}
-            </p>
-        </footer>
+      </main>
+      <hr>
+      <!-- 回到顶部箭头 -->
+      <div class="up"><a href="javascript:scrollTo(0,0)"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAh1BMVEUAAAAAAAAHBwcPDw8KCgocHBwHBwcWFhYvLy8CAgIICAgAAAAAAAApKSkaGhoICAgSEhIgICAdHR0QEBAsLCwICAgdHR0hISEDAwMhISEQEBAMDAwaGhoPDw8AAAAAAAANDQ0SEhIfHx8bGxsYGBgiIiIJCQknJycEBAQVFRUlJSUuLi4rKyuHOr48AAAAIHRSTlMaACdv8alE8dTUqRgO8dTUmm9ERPHi1JqMYWFTNjYXDX2H0SQAAAFmSURBVGje7drXboMwFIBh12YkjDCyd1eatPT9n6+Aig/EFpaMTYfOfwW2xQcSSEhAHkYIEUR4iPwe5Hwixjqd5UhEjBZJkdAsEkoRYjhEEEEEEUQQQQSRn0DoZEJtIWAUBSh2kENplMrBJpIvirpFbg/J48/v4twWso2vvHhrB8munTIbSPZxV2YeWV+E1qYR9yLJNYu4zzy3vW0QoavWcTviippC6OyF59bXBfszagY5do175WgCmfuvvLQZTGHMn+sicoPBMBMVfWTnv/MqAxQY93fDEPYEMfWUGlEZikldJH3kOXsitHdgPtVFgpbhEUleSwk0ENFQKlpI8tYEhqjwRYkWQpsDLMEQlWVzIlQLIZ5zq0oo6Ykm9SLH07272K1sCoZcmVarmP5zsuGGQtkMeeIDMPqUgAxBaK8Bq/7iWz0iiCCCCCKIIILIOIj9z7Ljf2AGJTR4HdG//7OgCRFEEOn2BScwTK+TREnMAAAAAElFTkSuQmCC"></a></div>
+      <footer>
+        <p style="text-align: center;">
+        {% capture footer-md %}{% include footer.md %}{% endcapture %}{{ footer-md | markdownify }}
+        </p>
+      </footer>
     </div>
     <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/default.min.css">
     <script src="https://unpkg.com/@highlightjs/cdn-assets@11.6.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
-    <script src="https://cdn.jsdelivr.net/gh/ZiChenStudio/welcometitle.js/dist/welcometitle.min.js" async></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/gh/zichenstudio/welcometitle.js/dist/welcometitle.min.js" async></script>
+  </body>
 </html>

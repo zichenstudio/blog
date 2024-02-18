@@ -2,22 +2,22 @@
 layout: default
 ---
 <article id="text-all">
-    <div class="post-header">
-        <h1>
-            <a href="{% include relative %}/index.html" style="font-size: 70%;color: #808080;" class="link">Back</a>
-            {{ page.title | escape }}
-        </h1>
-        <p class="post-info">
-            <time datetime='{{ page.date | date: "%Y/%m/%d-%a" }}'>{{ page.date | date: "%Y/%m/%d-%a" }}</time>
-            {% for tag in page.tags %}
-            | <a href="{% include relative %}/tags/#{{ tag | downcase }}">#{{ tag }}</a>
-            {% endfor %}
-            <div id="time-pass"></div>
-        </p>
-    </div>
-    {{ content }}
+  <div class="post-header">
+    <h1>
+      <a href="{% include relative %}/index.html" style="font-size: 70%;color: #808080;" class="link">Back</a>
+      {{ page.title | escape }}
+    </h1>
+    <p class="post-info">
+    <time datetime='{{ page.date | date: "%Y/%m/%d-%a" }}'>{{ page.date | date: "%Y/%m/%d-%a" }}</time>
+    {% for tag in page.tags %}
+    | <a href="{% include relative %}/tags/#{{ tag | downcase }}">#{{ tag }}</a>
+    {% endfor %}
+    <div id="time-pass"></div>
+    </p>
+  </div>
+  {{ content }}
 </article>
 <div id="content"></div>
-<script src="https://cdn.jsdelivr.net/gh/ZiChenStudio/smoothscroll.js/dist/smoothscroll.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/zichenstudio/smoothscroll.js/dist/smoothscroll.min.js"></script>
 <script src="{% include relative %}/script/contents.js" async></script>
 <script src="{% include relative %}/script/timepass.js" async></script>
