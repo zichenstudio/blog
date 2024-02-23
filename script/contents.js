@@ -1,5 +1,12 @@
 (function() {
-  let headings = document.querySelectorAll('h1:not(:first-child), h2, h3, h4, h5, h6');
+  const elements = document.getElementById('main-text').getElementsByTagName('*');
+  for (let i = 1; i < elements.length; i++) {
+    const element = elements[i];
+    if (element.id) {
+      element.id = '_' + element.id;
+    }
+  }
+  let headings = document.querySelector("#main-text").querySelectorAll('h1, h2, h3, h4, h5, h6');
   let contentDiv = document.createElement('div');
   contentDiv.id = 'content';
   let currentParent = contentDiv;
@@ -20,8 +27,8 @@
       for (let i = level; i < previousLevel; i++) {
         currentParent = currentParent.parentNode;
       }
-    currentParent.parentNode.appendChild(wrapper);
-    currentParent = wrapper;
+      currentParent.parentNode.appendChild(wrapper);
+      currentParent = wrapper;
     } else {
       contentDiv.appendChild(wrapper);
     }
