@@ -3,18 +3,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="{{ site.icon }}">
   <script>
-    let xhr = new XMLHttpRequest();
-    let bgUrl = "{{ site.background-url }}";
-    xhr.open('GET', bgUrl, true);
-    xhr.responseType = 'blob';
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        document.body.style.backgroundImage = "url({{ site.background-url }})";
-      } else {
-        console.error("background Error!");
-      }
-    };
-    xhr.send();
+      let imageUrl = "{{ site.background-url }}";
+      let img = new Image();
+      img.src = imageUrl;
+      img.onload = function() {
+        document.body.style.backgroundImage = `url('${imageUrl}')`;
+      };
   </script>
   {% include head/style.html %}
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
