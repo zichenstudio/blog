@@ -23,3 +23,24 @@ layout: default
 <script src="https://cdn.jsdelivr.net/gh/zichenstudio/smoothscroll.js/dist/smoothscroll.min.js"></script>
 <script src="{% include relative %}/script/contents.js" async></script>
 <script src="{% include relative %}/script/timepass.js" async></script>
+<script>
+  function loadCSS(url, callback) {
+    var link = document.createElement('link');
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    link.href = url;
+    link.onload = callback;
+    document.head.appendChild(link);
+  }
+  function loadJS(url, callback) {
+    var script = document.createElement('script');
+    script.src = url;
+    script.onload = callback;
+    document.head.appendChild(script);
+  }
+  loadCSS('https://unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/default.min.css', function() {
+    loadJS('https://unpkg.com/@highlightjs/cdn-assets@11.6.0/highlight.min.js', function() {
+      hljs.highlightAll();
+    });
+  });
+</script>
