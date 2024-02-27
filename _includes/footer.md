@@ -5,3 +5,5 @@
 [![ultralight MIT LICENCE](https://img.shields.io/badge/ultralight_LICENCE-MIT-green)](https://github.com/zichenstudio/Efficiency_jekyll_theme/blob/master/LICENSE-ultralight)
 
 | [BiliBili](https://space.bilibili.com/1740643474) | [GitHub](https://github.com/zichenstudio) |
+
+{{ site.background-source }}

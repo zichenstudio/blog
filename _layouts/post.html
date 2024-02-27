@@ -12,17 +12,34 @@ layout: default
     {% for tag in page.tags %}
     | <a href="{% include relative %}/tags/#{{ tag | downcase }}">#{{ tag }}</a>
     {% endfor %}
-    <div id="time-pass"></div>
+    <hr>
+    <div id="statistics">
+      <span id="time-pass"></span><br>
+      <span id="word-count"></span> | <span id="reading-time"></span>
+    </div>
+    <hr>
     </p>
   </div>
   <div id="main-text">
-  {{ content }}
+    {{ content }}
   </div>
 </article>
 <div id="content"></div>
 <script src="https://cdn.jsdelivr.net/gh/zichenstudio/smoothscroll.js/dist/smoothscroll.min.js"></script>
 <script src="{% include relative %}/script/contents.js" async></script>
-<script src="{% include relative %}/script/timepass.js" async></script>
+<script>
+  (function() {
+    // 日期统计
+    const ARTICALTIME = document.querySelector('time').innerText;
+    const FORMATTIME = `${ARTICALTIME.substring(0, 4)}/${ARTICALTIME.substring(5, 7)}/${ARTICALTIME.substring(8, 10)}`;
+    let timePass = parseInt((new Date() - new Date(FORMATTIME)) / 86400000);
+    document.querySelector('#time-pass').innerHTML = `<strong>本文距今已逾${timePass}日，文中描绘乃当时情形，时过境迁，请注意辨别。</strong>`
+    // 字数统计
+    const WORDCOUNT = document.querySelector('#main-text').innerText.replace(/\s/g, "");
+    document.querySelector('#word-count').innerHTML = `全文共${WORDCOUNT.length}字`
+    document.querySelector('#reading-time').innerHTML = `预计阅读需要${Math.ceil(WORDCOUNT.length / 500)}分钟`
+  })();
+</script>
 <script>
   function loadCSS(url, callback) {
     var link = document.createElement('link');

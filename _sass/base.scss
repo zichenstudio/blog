@@ -11,166 +11,157 @@ $theme-color: #39C5BB;
 $blockquote-bg-color: #000000;
 
 body {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: $primary-text-color;
-    display: flex;
-    justify-content: center;
-    font-family: sans-serif;
-    margin: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: $primary-text-color;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  margin: 0;
 }
 
 .content-wrapper {
-    background-color: rgba(235, 248, 253, 0.85);
-    margin: 1% 2% 5% 2%;
-    padding: 1% 1.5% 3%;
-    border-radius: 20px;
-    max-width: 800px;
-    width: 100%;
-    /* 设置内容区域内元素的最大宽度 */
-    * {
-        max-width: 100%;
-    }
+  background-color: rgba(235, 248, 253, 0.85);
+  margin: 1% 2% 5% 2%;
+  padding: 1% 1.5% 3%;
+  border-radius: 20px;
+  max-width: 800px;
+  width: 100%;
+  * {
+    max-width: 100%;
+  }
 }
 
 .search {
-    input {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: $input-background-color;
-        &:focus {
-            outline: none;
-            border-color: $theme-color;
-            box-shadow: 0 0 5px $theme-color;
-        }
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: $input-background-color;
+    &:focus {
+      outline: none;
+      border-color: $theme-color;
+      box-shadow: 0 0 5px $theme-color;
     }
+  }
 }
 
 ul {
-    padding-left: 10px;
-    margin: 10px;
+  padding-left: 10px;
+  margin: 10px;
 }
 
 li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 article {
-    padding: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
 }
 
 header,
 footer {
-    padding: 10px;
+  padding: 10px;
 }
 
 .home {
-    padding: 1em;
+  padding: 1em;
 }
 
 .site-title {
-    color: $primary-text-color;
-    font-weight: bold;
+  color: $primary-text-color;
+  font-weight: bold;
 }
 
 .post-counter {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .post-info {
-    margin: auto;
+  margin: auto;
 }
 
 table {
-    border-collapse: collapse; /* 合并单元格边框 */
-    width: 100%;
+  border-collapse: collapse; /* 合并单元格边框 */
+  width: 100%;
 }
 
 thead {
-    tr {
-        th {
-            background-color: $thead-background-color;
-            /* 鼠标悬浮时改变表头列背景颜色 */
-        }
-        &:hover {
-            th {
-                background-color: $thead-hover-background-color;
-                /* 鼠标悬浮时改变表头列背景颜色 */
-                color: $thead-hover-color;
-                /* 鼠标悬浮时改变表头列文字颜色 */
-            }
-        }
+  tr {
+    th {
+      background-color: $thead-background-color;
+      /* 鼠标悬浮时改变表头列背景颜色 */
     }
+    &:hover {
+      th {
+        background-color: $thead-hover-background-color;
+        /* 鼠标悬浮时改变表头列背景颜色 */
+        color: $thead-hover-color;
+        /* 鼠标悬浮时改变表头列文字颜色 */
+      }
+    }
+  }
 }
 
 th,
 td {
-    padding: 8px;/* 单元格内边距 */
+  padding: 8px;/* 单元格内边距 */
 }
 
 tr:hover {
-    background-color: $tr-hover-background-color;
+  background-color: $tr-hover-background-color;
 } 
 td:hover {
-    background-color: $td-hover-background-color;
+  background-color: $td-hover-background-color;
 }
 
 a {
-    color: $primary-text-color;
-    text-decoration-line: none;
-    &:hover {
-        color: $theme-color;
-        text-decoration-line: underline;
-        font-weight: bolder;
-    }
+  color: $primary-text-color;
+  text-decoration-line: none;
+  &:hover {
+    color: $theme-color;
+    text-decoration-line: underline;
+    font-weight: bolder;
+  }
 }
 
 /* 引用左侧竖线 */
 blockquote {
-    background-color: rgba(57, 197, 187, 0.3);
-    position: relative;
-    padding-left: 10px;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 4px;
-        height: 100%;
-        background-color: $theme-color;
-    }
-    ul,ol {
-        margin: 0px;
-        padding: 0px 0px 0px 20px;
-    }
+  background-color: rgba(57, 197, 187, 0.3);
+  position: relative;
+  padding-left: 10px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $theme-color;
+  }
+  ul,ol {
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+  }
 }
 
 .up{
-    float: right;
-    position: fixed;
-    height: 100px;
-    width: 100px;
-    top: 65%;
-    right:5px;
+  float: right;
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  top: 65%;
+  right:5px;
 }
 
 #content {
-    background-color: rgba(235, 248, 253, 0.1);
-    float: right;
-    position: fixed;
-    top: 20%;
-    left: 10px;
-    border-radius: 20px;
-}
-
-#time-pass {
-    background-color: rgba(197, 57, 67 ,0.4);
-    // RGB197,57,67(#C53943)与#39C5BB互补
-    border: solid $theme-color;
-    border-radius: 5px;
-    font-style: italic;
+  background-color: rgba(235, 248, 253, 0.1);
+  float: right;
+  position: fixed;
+  top: 20%;
+  left: 10px;
+  border-radius: 20px;
 }
 
