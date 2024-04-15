@@ -28,7 +28,7 @@ ccbync: 'This work is licensed under CC BY-NC 4.0. To view a copy of this licens
 ccbyncsa: 'This work is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">http://creativecommons.org/licenses/by-nc-sa/4.0/</a>'
 
 # R15 tips
-r15: '<p style="color: #f00"><strong>本内容可能不适合未满15周岁读者阅读</strong>本内容可能包含暴力、粗口、血腥、恐怖、惊悚、性暗示、药物滥用等内容。若无法保持理智，请不要继续阅读。我们不会对任何人阅读此内容而造成的任何后果负责。'
+r15: '<p style="color: #f00"><strong>本内容可能不适合未满15周岁读者阅读</strong>本内容可能包含暴力、粗口、血腥、恐怖、惊悚、性暗示、药物滥用等内容。若无法保持理智，请不要继续阅读。我们不会对任何人阅读此内容而造成的任何后果负责。</p>'
 
 # Build settings
 markdown: kramdown
