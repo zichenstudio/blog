@@ -6,7 +6,7 @@ tags: 技术
 
 先要安装nodejs
 
-再用npm安装http-server,输入`npm install http-server -g`
+再用npm安装http-server，输入`npm install http-server -g`
 
 再用cd定位到文件夹根目录，使用`http-server`开始运行。
 
@@ -16,4 +16,4 @@ tags: 技术
 
 -----------------
 
-{{ site.ccbync}}
+{{ site.ccbync }}
