@@ -4,6 +4,8 @@ title: 如何解决coc.nvim下载超时的问题
 tags: 技术
 ---
 
+# 如何解决coc.nvim下载超时的问题
+
 原讨论：[https://github.com/neoclide/coc.nvim/discussions/4829](https://github.com/neoclide/coc.nvim/discussions/4829)
 
 ## 原因

@@ -4,6 +4,8 @@ title: 如何解决 GitHub 提交次数过多 .git 文件过大的问题？
 tags: Github
 ---
 
+# 如何解决 GitHub 提交次数过多 .git 文件过大的问题？
+
 原文：[如何解决 GitHub 提交次数过多 .git 文件过大的问题？ - 郑宇的回答 - 知乎](https://www.zhihu.com/question/29769130/answer/315745139)
 
 可以尝试把里面的大文件删掉。下面是具体的操作方法：

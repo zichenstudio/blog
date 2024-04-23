@@ -4,7 +4,9 @@ title: Minecraft:Mod安装，从入门到原地升天
 tags: Minecraft
 ---
 
-# 下载Mod
+# Minecraft:Mod安装，从入门到原地升天
+
+## 下载Mod
 
 首先你必须找到你要安装的Mod，安装mod推荐两个网站
 
@@ -17,7 +19,7 @@ tags: Minecraft
 
 ----------------------
 
-# 安装Mod
+## 安装Mod
 
 首先你需要一个有Mod加载器的Minecraft版本，你需要安装一个Forge、Fabric等mod加载器。
 
@@ -29,7 +31,7 @@ mods文件夹在.minecraft文件夹中的mods里面，如果是用非官方启�
 
 ------------------
 
-# 出现问题?
+## 出现问题?
 
 一般情况下，mod需要完整的mod加载器，你要确保你的mod加载器安装完整。
 

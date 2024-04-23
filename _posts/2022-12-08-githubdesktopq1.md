@@ -4,6 +4,8 @@ title: Github Desktop提交代码:schannel:failed to receive handshake, SSL/TLS 
 tags: Bug
 ---
 
+# Github Desktop提交代码:schannel:failed to receive handshake, SSL/TLS connectionfailed
+
 在一次新的提交中遇到了一个问题
 
 ```

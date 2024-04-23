@@ -4,6 +4,8 @@ title: (译)怎样编写一个CONTRIBUTING.md
 tags: 技术
 ---
 
+# 怎样编写一个CONTRIBUTING.md
+
 原文: [How to Build a CONTRIBUTING.md](https://contributing.md/how-to-build-contributing-md/)
 
 **版权归原作者所有!**

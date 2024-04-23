@@ -5,6 +5,8 @@ tags: 技术
 mathjax: on
 ---
 
+# 用JavaScript实现方差计算
+
 ~~注：本文是为了练习MathJax而写~~
 
 首先，方差公式是

@@ -3,6 +3,9 @@ layout: post
 title: 极具纪念意义，人生第一个ISSUE
 tags: 随笔
 ---
+
+# 极具纪念意义，人生第一个ISSUE
+
 本文同时在[BiliBili](https://www.bilibili.com/read/cv23423487)发布
 
 今天，我人生的第一个ISSUE，出现了！

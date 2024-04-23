@@ -4,6 +4,8 @@ title: "[2024初音ミク感谢日]人生第一幅画是给miku的——我与mi
 tags: 初音ミク
 ---
 
+# [2024初音ミク感谢日]人生第一幅画是给miku的——我与miku的故事
+
 本文于[BiliBili](https://www.bilibili.com/read/cv32412257/)首发
 
 今天是3月9日

@@ -4,6 +4,8 @@ title: "[Minecraft材质包/初音ミク16th庆祝]Miku风格的PVP材质包"
 tags: Minecraft 初音ミク
 ---
 
+# [Minecraft材质包/初音ミク16th庆祝]Miku风格的PVP材质包
+
 同时在BiliBili发布，文章链接[cv26041067](https://www.bilibili.com/read/cv26041067)
 
 今天是Miku的16周年！
