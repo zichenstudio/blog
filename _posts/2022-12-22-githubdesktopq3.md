@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Github Desktop提交代码:git SSL certificate problem:unable to get local issuer certificate
-tags: Bug
+tags: Github
 ---
 
 # Github Desktop提交代码:git SSL certificate problem:unable to get local issuer certificate

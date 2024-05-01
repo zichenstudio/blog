@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Minecraft材质包/初音ミク16th庆祝]Miku风格的PVP材质包"
-tags: Minecraft 初音ミク
+tags: Minecraft 初音ミク 原创
 ---
 
 # [Minecraft材质包/初音ミク16th庆祝]Miku风格的PVP材质包

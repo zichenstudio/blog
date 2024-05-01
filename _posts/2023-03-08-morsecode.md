@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 摩尔斯电码(Morse Code)的对照表
-tags: 随笔
+tags: 原创
 ---
 
 # 摩尔斯电码(Morse Code)的对照表

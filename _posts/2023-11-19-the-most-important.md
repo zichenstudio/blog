@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 最重要的东西
-tags: 随笔
+tags: 原创
 ---
 
 # 最重要的东西

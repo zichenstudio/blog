@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Github Desktop提交代码:schannel:failed to receive handshake, SSL/TLS connectionfailed
-tags: Bug
+tags: Github
 ---
 
 # Github Desktop提交代码:schannel:failed to receive handshake, SSL/TLS connectionfailed

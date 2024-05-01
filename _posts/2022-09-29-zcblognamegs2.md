@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 子沉Blog条文命名规范(GS2)
+title: (已停用)子沉Blog条文命名规范(GS2)
 tags: 官方
 ---
 

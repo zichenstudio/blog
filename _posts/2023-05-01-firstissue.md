@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 极具纪念意义，人生第一个ISSUE
-tags: 随笔
+tags: 官方
 ---
 
 # 极具纪念意义，人生第一个ISSUE
