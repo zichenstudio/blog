@@ -163,5 +163,10 @@ blockquote {
   top: 20%;
   left: 10px;
   border-radius: 20px;
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 1;
+  }
 }
 
