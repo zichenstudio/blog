@@ -14,4 +14,4 @@ permalink: /tags/
 {% endfor %}
 {% endfor %}
 
-<script src="https://cdn.jsdelivr.net/gh/zichenstudio/smoothscroll.js/dist/smoothscroll.min.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/zichenstudio/smoothscroll.js/dist/smoothscroll.min.js"></script>

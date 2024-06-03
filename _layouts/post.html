@@ -25,7 +25,7 @@ layout: default
   </div>
 </article>
 <div id="content"></div>
-<script src="https://cdn.jsdelivr.net/gh/zichenstudio/smoothscroll.js/dist/smoothscroll.min.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/zichenstudio/smoothscroll.js/dist/smoothscroll.min.js"></script>
 <script src="{% include relative %}/script/contents.js" async></script>
 <script>
   (function() {
@@ -40,24 +40,10 @@ layout: default
     document.querySelector('#reading-time').innerHTML = `预计阅读需要${Math.ceil(WORDCOUNT.length / 500)}分钟`
   })();
 </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/go.min.js"></script>
 <script>
-  function loadCSS(url, callback) {
-    var link = document.createElement('link');
-    link.type = 'text/css';
-    link.rel = 'stylesheet';
-    link.href = url;
-    link.onload = callback;
-    document.head.appendChild(link);
-  }
-  function loadJS(url, callback) {
-    var script = document.createElement('script');
-    script.src = url;
-    script.onload = callback;
-    document.head.appendChild(script);
-  }
-  loadCSS('https://unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/default.min.css', function() {
-    loadJS('https://unpkg.com/@highlightjs/cdn-assets@11.6.0/highlight.min.js', function() {
-      hljs.highlightAll();
-    });
-  });
+  hljs.highlightAll();
 </script>
