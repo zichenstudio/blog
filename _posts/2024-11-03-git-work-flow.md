@@ -6,8 +6,6 @@ tags: 官方
 
 ---
 
-
-
 # Git工作流程规范
 
 对于git的工作流程，我们选择使用「GitFlow」工作流，我们认为它很高效合理。下面是对此规范的简单介绍与具体使用示例。
@@ -62,6 +60,8 @@ git merge --no-ff release
 git checkout develop
 git merge --no-ff release
 git push
+# 删除该release分支
+git branch -d release
 ```
 
 release中的每次commit都应当有相应的tag
