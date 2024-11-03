@@ -93,7 +93,7 @@ git tag -a vx.x.x.x main
 git push --tags
 ```
 
-对此作出规范，hotfix分支的命名遵循《版本号命名规范》，格式为`hotfix-example`，example部分更改均仅更改修订号。
+对此作出规范，hotfix分支的命名遵循《版本号命名规范》，格式为`hotfix-example`，example部分更改均仅更改修订号，而且由于时间跨度未知，所以不写发布日期部分数字。
 
 ### 三、生效范围
 
