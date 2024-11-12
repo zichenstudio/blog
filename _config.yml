@@ -53,3 +53,8 @@ exclude:
   - LICENSE 
   - LICENSE-ultralight
 
+url: "https://zichenstudio.github.io/blog"
+
+plugins:
+  - jekyll-sitemap
+
